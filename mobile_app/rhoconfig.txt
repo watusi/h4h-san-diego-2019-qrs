@@ -26,7 +26,7 @@ LogCategories = *
 ExcludeLogCategories =
 
 # max log file size in Bytes, set 0 to unlimited size; when limit is reached, log wraps to beginning of file
-MaxLogFileSize=50000
+MaxLogFileSize=0
 
 # turn on local http server traces, off by default
 #net_trace = 0
@@ -36,7 +36,7 @@ MaxLogFileSize=50000
 
 # where log will be posted by RhoConf.send_log or from the log menu
 # source is also open and up on http://github.com/rhomobile/rhologs, so you can deploy your own logserver
-logserver = 'http://taulogservice.herokuapp.com'
+#logserver = 'http://taulogservice.herokuapp.com'
 
 # log file prefix - contain human-readable text
 logname='qrs'
@@ -90,7 +90,7 @@ sync_poll_interval=0
 # default value is FALSE. from June 2016 iOS application should support ipv6. libCURL does not support it - so by default application use Apple's network framework.
 #If true, an old libCURL-based Net request will be used. This option can be enabled for regression testing or if custom proxy support is required. Default is FALSE. To support per-app VPN (i.e. MobileIron) this option should be set to FALSE.
 
-#ios_direct_local_requests = 1
+ios_direct_local_requests = 0
 # default value is TRUE. From June 2016 application shoudl support ipv6. So by default libCURL not used - in this case this option should be TRUE for correct work VPN etc.
 #If true, request to local server will be applied directly, bypassing socket intercommunication, no network requests are involved. If false, a legacy client-server intercommunication will be made for local requests. Default is TRUE. To support per-app VPN (i.e. MobileIron) this option should be set to TRUE.
 
@@ -101,7 +101,7 @@ sync_poll_interval=0
 # It help solve some security issues like work geolocation HTTP5 API in WebView, because this API works only if secure connection.
 # The are not real HTTPS server - just replace URL - it works because with  ios_direct_local_requests = 1 not real connection provided.
 
-#ios_use_WKWebView = 0
+ios_use_WKWebView = 1
 #ATTENTION !!! this option works only with ios_direct_local_requests = 0 !!!
 #default value is FALSE
 # If TRUE WKWebView new iOS high performance(Javascript performance up to 10 times faster than default UIWebView) WebView used instead of default UIWebView.
