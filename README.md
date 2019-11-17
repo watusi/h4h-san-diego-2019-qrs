@@ -4,7 +4,7 @@ Cross-platform QR-code scanning app baseline for Hacking for Humanity San Diego 
 The QRS group is developing a website to help the public discover issues and solutions
 for military veterans. 
 
-The basic concept is to encourage users to learn about these issue through a gamification
+The basic concept is to encourage users to learn about these issues through a gamification
 concept. Users scan QR codes, which might simply be random QR codes found in the environment,
 or QR codes from participating sponsors (such as retailers, etc.) 
 
