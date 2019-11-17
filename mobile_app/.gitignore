@@ -9,3 +9,8 @@ project/
 rhosimulator/
 public/api/generated/
 .cbc
+
+
+# Normally I do not exclude this. I am excluding it for security reasons
+# as I have omitted the use of the pre-build "prepare" script
+build.yml
