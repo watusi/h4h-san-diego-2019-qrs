@@ -23,6 +23,9 @@ class CapturedQrController < Rho::RhoController
   # GET /CapturedQr/new
   def new
     @capturedqr = CapturedQr.new
+    # Scan with default options
+    # We could have passed in some Barcode.properties in the first param
+    Rho::Barcode.take({}, url_for(:action => :scan_received))
     render :action => :new, :back => url_for(:action => :index)
   end
 
@@ -53,6 +56,17 @@ class CapturedQrController < Rho::RhoController
   def delete
     @capturedqr = CapturedQr.find(@params['id'])
     @capturedqr.destroy if @capturedqr
-    redirect :action => :index  
+    redirect :action => :index
   end
+
+def scan_received
+  # Did we actually find a barcode ?
+  # If status is not 'ok', the scan was cancelled
+  if @params["status"] == "ok"
+    Rho::Log.info(@params["barcode"],"Barcode result")
+  else
+    Rho::Log.info("Cancelled", "Barcode result")
+  end
+end
+
 end
