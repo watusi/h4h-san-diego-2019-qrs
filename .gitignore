@@ -135,3 +135,7 @@ tmtags
 # cache file used by oh-my-zsh fast-rake plugin
 .rake_tasks
 
+# Normally I do not exclude this. I am excluding it for security reasons
+# as I have omitted the use of the pre-build "prepare" script
+build.yml
+
