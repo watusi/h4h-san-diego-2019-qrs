@@ -1,0 +1,82 @@
+[INFO]  Compiling java sources: ["/var/folders/kl/m2t3k6pn2nb7j95qq4f618wc0000gn/T/coreapiSRC_build20191117-15076-1h62vd6"]
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+[INFO]
+[INFO]  Compiling java sources: ["/var/folders/kl/m2t3k6pn2nb7j95qq4f618wc0000gn/T/emdk3-managerSRC_build20191117-15076-1ci57o9"]
+/Users/jon/.rvm/gems/ruby-2.3.8@rhodes-7-1-4-with-tau-extensions/gems/rhodes-7.1.4/extensions/emdk3-manager/ext/platform/android/src/com/rho/emdk3/EMDK3Extension.java:8: error: package com.symbol.emdk does not exist
+import com.symbol.emdk.EMDKManager;
+                      ^
+/Users/jon/.rvm/gems/ruby-2.3.8@rhodes-7-1-4-with-tau-extensions/gems/rhodes-7.1.4/extensions/emdk3-manager/ext/platform/android/src/com/rho/emdk3/EMDK3Extension.java:9: error: package com.symbol.emdk.EMDKManager does not exist
+import com.symbol.emdk.EMDKManager.EMDKListener;
+                                  ^
+/Users/jon/.rvm/gems/ruby-2.3.8@rhodes-7-1-4-with-tau-extensions/gems/rhodes-7.1.4/extensions/emdk3-manager/ext/platform/android/src/com/rho/emdk3/EMDK3Extension.java:10: error: package com.symbol.emdk does not exist
+import com.symbol.emdk.EMDKResults;
+                      ^
+/Users/jon/.rvm/gems/ruby-2.3.8@rhodes-7-1-4-with-tau-extensions/gems/rhodes-7.1.4/extensions/emdk3-manager/ext/platform/android/src/com/rho/emdk3/EMDK3Extension.java:11: error: package com.symbol.emdk.EMDKResults does not exist
+import com.symbol.emdk.EMDKResults.STATUS_CODE;
+                                  ^
+/Users/jon/.rvm/gems/ruby-2.3.8@rhodes-7-1-4-with-tau-extensions/gems/rhodes-7.1.4/extensions/emdk3-manager/ext/platform/android/src/com/rho/emdk3/EMDK3Extension.java:18: error: cannot find symbol
+public class EMDK3Extension extends AbstractRhoExtension implements EMDKListener
+                                                                    ^
+  symbol: class EMDKListener
+/Users/jon/.rvm/gems/ruby-2.3.8@rhodes-7-1-4-with-tau-extensions/gems/rhodes-7.1.4/extensions/emdk3-manager/ext/platform/android/src/com/rho/emdk3/EMDK3Extension.java:21: error: cannot find symbol
+  private STATUS_CODE statusCode; //TODO
+          ^
+  symbol:   class STATUS_CODE
+  location: class EMDK3Extension
+/Users/jon/.rvm/gems/ruby-2.3.8@rhodes-7-1-4-with-tau-extensions/gems/rhodes-7.1.4/extensions/emdk3-manager/ext/platform/android/src/com/rho/emdk3/EMDK3Extension.java:22: error: cannot find symbol
+  private EMDKManager emdkManager;
+          ^
+  symbol:   class EMDKManager
+  location: class EMDK3Extension
+/Users/jon/.rvm/gems/ruby-2.3.8@rhodes-7-1-4-with-tau-extensions/gems/rhodes-7.1.4/extensions/emdk3-manager/ext/platform/android/src/com/rho/emdk3/IEmdkManagerListener.java:3: error: package com.symbol.emdk does not exist
+import com.symbol.emdk.EMDKManager;
+                      ^
+/Users/jon/.rvm/gems/ruby-2.3.8@rhodes-7-1-4-with-tau-extensions/gems/rhodes-7.1.4/extensions/emdk3-manager/ext/platform/android/src/com/rho/emdk3/EMDK3Extension.java:72: error: cannot find symbol
+  public void onOpened(EMDKManager emdkManager)
+                       ^
+  symbol:   class EMDKManager
+  location: class EMDK3Extension
+/Users/jon/.rvm/gems/ruby-2.3.8@rhodes-7-1-4-with-tau-extensions/gems/rhodes-7.1.4/extensions/emdk3-manager/ext/platform/android/src/com/rho/emdk3/EMDK3Extension.java:101: error: cannot find symbol
+  public EMDKManager getEmdkManager()
+         ^
+  symbol:   class EMDKManager
+  location: class EMDK3Extension
+/Users/jon/.rvm/gems/ruby-2.3.8@rhodes-7-1-4-with-tau-extensions/gems/rhodes-7.1.4/extensions/emdk3-manager/ext/platform/android/src/com/rho/emdk3/IEmdkManagerListener.java:7: error: cannot find symbol
+  public void onOpened(EMDKManager emdkManager);
+                       ^
+  symbol:   class EMDKManager
+  location: interface IEmdkManagerListener
+/Users/jon/.rvm/gems/ruby-2.3.8@rhodes-7-1-4-with-tau-extensions/gems/rhodes-7.1.4/extensions/emdk3-manager/ext/platform/android/src/com/rho/emdk3/EMDK3Extension.java:40: error: cannot find symbol
+    statusCode = EMDKManager.getEMDKManager(RhoExtManager.getImplementationInstance().getContext(), this).statusCode;
+                 ^
+  symbol:   variable EMDKManager
+  location: class EMDK3Extension
+/Users/jon/.rvm/gems/ruby-2.3.8@rhodes-7-1-4-with-tau-extensions/gems/rhodes-7.1.4/extensions/emdk3-manager/ext/platform/android/src/com/rho/emdk3/EMDK3Extension.java:41: error: package EMDKResults does not exist
+    if(statusCode != EMDKResults.STATUS_CODE.SUCCESS)
+                                ^
+/Users/jon/.rvm/gems/ruby-2.3.8@rhodes-7-1-4-with-tau-extensions/gems/rhodes-7.1.4/extensions/emdk3-manager/ext/platform/android/src/com/rho/emdk3/EMDK3Extension.java:71: error: method does not override or implement a method from a supertype
+  @Override
+  ^
+/Users/jon/.rvm/gems/ruby-2.3.8@rhodes-7-1-4-with-tau-extensions/gems/rhodes-7.1.4/extensions/emdk3-manager/ext/platform/android/src/com/rho/emdk3/EMDK3Extension.java:85: error: method does not override or implement a method from a supertype
+  @Override
+  ^
+15 errors
+[INFO]
+rake aborted!
+Error compiling java code
+/Users/jon/.rvm/gems/ruby-2.3.8@rhodes-7-1-4-with-tau-extensions/gems/rhodes-7.1.4/platform/android/build/androidcommon.rb:482:in `java_compile'
+/Users/jon/.rvm/gems/ruby-2.3.8@rhodes-7-1-4-with-tau-extensions/gems/rhodes-7.1.4/platform/android/build/androidcommon.rb:526:in `java_build'
+/Users/jon/.rvm/gems/ruby-2.3.8@rhodes-7-1-4-with-tau-extensions/gems/rhodes-7.1.4/platform/android/build/android.rake:2488:in `block (4 levels) in <top (required)>'
+/Users/jon/.rvm/gems/ruby-2.3.8@rhodes-7-1-4-with-tau-extensions/gems/rhodes-7.1.4/platform/android/build/android.rake:2468:in `each'
+/Users/jon/.rvm/gems/ruby-2.3.8@rhodes-7-1-4-with-tau-extensions/gems/rhodes-7.1.4/platform/android/build/android.rake:2468:in `block (3 levels) in <top (required)>'
+/Users/jon/.rvm/gems/ruby-2.3.8@rhodes-7-1-4-with-tau-extensions/gems/rhodes-7.1.4/Rakefile:113:in `execute'
+/Users/jon/.rvm/gems/ruby-2.3.8@rhodes-7-1-4-with-tau-extensions/gems/rhodes-7.1.4/Rakefile:4530:in `invoke'
+/Users/jon/.rvm/gems/ruby-2.3.8@rhodes-7-1-4-with-tau-extensions/gems/rake-12.0.0/exe/rake:27:in `<top (required)>'
+/Users/jon/.rvm/gems/ruby-2.3.8@rhodes-7-1-4-with-tau-extensions/bin/ruby_executable_hooks:24:in `eval'
+/Users/jon/.rvm/gems/ruby-2.3.8@rhodes-7-1-4-with-tau-extensions/bin/ruby_executable_hooks:24:in `<main>'
+Tasks: TOP => device:android:production => package:android => build:android:all => build:android:extensions_java
+(See full trace by running task with --trace)
+➜  mobile_app git:(master)
