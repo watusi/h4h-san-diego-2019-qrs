@@ -1,0 +1,65 @@
+[INFO]  Compile extensions java code
+[INFO]  /Users/jon/workspace/h4h-san-diego-2019-qrs/mobile_app/bin/target/android/debug/extensions/coreapi/coreapi.jar is uptodate: true
+[INFO]  Compiling java sources: ["/var/folders/kl/m2t3k6pn2nb7j95qq4f618wc0000gn/T/emdk3-managerSRC_build20191219-32098-1h43fss"]
+/Users/jon/.rvm/gems/ruby-2.6.5@rhodes-7_1_17/gems/rhodes-7.1.17/extensions/emdk3-manager/ext/platform/android/src/com/rho/emdk3/EMDK3Extension.java:8: error: package com.symbol.emdk does not exist
+import com.symbol.emdk.EMDKManager;
+                      ^
+/Users/jon/.rvm/gems/ruby-2.6.5@rhodes-7_1_17/gems/rhodes-7.1.17/extensions/emdk3-manager/ext/platform/android/src/com/rho/emdk3/EMDK3Extension.java:9: error: package com.symbol.emdk.EMDKManager does not exist
+import com.symbol.emdk.EMDKManager.EMDKListener;
+                                  ^
+/Users/jon/.rvm/gems/ruby-2.6.5@rhodes-7_1_17/gems/rhodes-7.1.17/extensions/emdk3-manager/ext/platform/android/src/com/rho/emdk3/EMDK3Extension.java:10: error: package com.symbol.emdk does not exist
+import com.symbol.emdk.EMDKResults;
+                      ^
+/Users/jon/.rvm/gems/ruby-2.6.5@rhodes-7_1_17/gems/rhodes-7.1.17/extensions/emdk3-manager/ext/platform/android/src/com/rho/emdk3/EMDK3Extension.java:11: error: package com.symbol.emdk.EMDKResults does not exist
+import com.symbol.emdk.EMDKResults.STATUS_CODE;
+                                  ^
+/Users/jon/.rvm/gems/ruby-2.6.5@rhodes-7_1_17/gems/rhodes-7.1.17/extensions/emdk3-manager/ext/platform/android/src/com/rho/emdk3/EMDK3Extension.java:18: error: cannot find symbol
+public class EMDK3Extension extends AbstractRhoExtension implements EMDKListener
+                                                                    ^
+  symbol: class EMDKListener
+/Users/jon/.rvm/gems/ruby-2.6.5@rhodes-7_1_17/gems/rhodes-7.1.17/extensions/emdk3-manager/ext/platform/android/src/com/rho/emdk3/EMDK3Extension.java:21: error: cannot find symbol
+  private STATUS_CODE statusCode; //TODO
+          ^
+  symbol:   class STATUS_CODE
+  location: class EMDK3Extension
+/Users/jon/.rvm/gems/ruby-2.6.5@rhodes-7_1_17/gems/rhodes-7.1.17/extensions/emdk3-manager/ext/platform/android/src/com/rho/emdk3/EMDK3Extension.java:22: error: cannot find symbol
+  private EMDKManager emdkManager;
+          ^
+  symbol:   class EMDKManager
+  location: class EMDK3Extension
+/Users/jon/.rvm/gems/ruby-2.6.5@rhodes-7_1_17/gems/rhodes-7.1.17/extensions/emdk3-manager/ext/platform/android/src/com/rho/emdk3/IEmdkManagerListener.java:3: error: package com.symbol.emdk does not exist
+import com.symbol.emdk.EMDKManager;
+                      ^
+/Users/jon/.rvm/gems/ruby-2.6.5@rhodes-7_1_17/gems/rhodes-7.1.17/extensions/emdk3-manager/ext/platform/android/src/com/rho/emdk3/EMDK3Extension.java:72: error: cannot find symbol
+  public void onOpened(EMDKManager emdkManager)
+                       ^
+  symbol:   class EMDKManager
+  location: class EMDK3Extension
+/Users/jon/.rvm/gems/ruby-2.6.5@rhodes-7_1_17/gems/rhodes-7.1.17/extensions/emdk3-manager/ext/platform/android/src/com/rho/emdk3/EMDK3Extension.java:101: error: cannot find symbol
+  public EMDKManager getEmdkManager()
+         ^
+  symbol:   class EMDKManager
+  location: class EMDK3Extension
+/Users/jon/.rvm/gems/ruby-2.6.5@rhodes-7_1_17/gems/rhodes-7.1.17/extensions/emdk3-manager/ext/platform/android/src/com/rho/emdk3/IEmdkManagerListener.java:7: error: cannot find symbol
+  public void onOpened(EMDKManager emdkManager);
+                       ^
+  symbol:   class EMDKManager
+  location: interface IEmdkManagerListener
+/Users/jon/.rvm/gems/ruby-2.6.5@rhodes-7_1_17/gems/rhodes-7.1.17/extensions/emdk3-manager/ext/platform/android/src/com/rho/emdk3/EMDK3Extension.java:40: error: cannot find symbol
+    statusCode = EMDKManager.getEMDKManager(RhoExtManager.getImplementationInstance().getContext(), this).statusCode;
+                 ^
+  symbol:   variable EMDKManager
+  location: class EMDK3Extension
+/Users/jon/.rvm/gems/ruby-2.6.5@rhodes-7_1_17/gems/rhodes-7.1.17/extensions/emdk3-manager/ext/platform/android/src/com/rho/emdk3/EMDK3Extension.java:41: error: package EMDKResults does not exist
+    if(statusCode != EMDKResults.STATUS_CODE.SUCCESS)
+                                ^
+/Users/jon/.rvm/gems/ruby-2.6.5@rhodes-7_1_17/gems/rhodes-7.1.17/extensions/emdk3-manager/ext/platform/android/src/com/rho/emdk3/EMDK3Extension.java:71: error: method does not override or implement a method from a supertype
+  @Override
+  ^
+/Users/jon/.rvm/gems/ruby-2.6.5@rhodes-7_1_17/gems/rhodes-7.1.17/extensions/emdk3-manager/ext/platform/android/src/com/rho/emdk3/EMDK3Extension.java:85: error: method does not override or implement a method from a supertype
+  @Override
+  ^
+15 errors
+[INFO]
+rake aborted!
+Error compiling java code
