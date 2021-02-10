@@ -22,8 +22,8 @@ for an internal nodejs server.
 
 You can find more information about the RhoMobile platform here:
 
-- http://www.tau-platform.com/en/products/rhomobile/
-- https://www.tau-platform.com/en/
+- https://tau-platform.com/en/products/rhomobile/
+- https://tau-platform.com/en/
 
 The source code for the platform is hosted on GitHub.
 
