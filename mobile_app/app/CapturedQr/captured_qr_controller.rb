@@ -67,7 +67,7 @@ def scan_received
   else
     Rho::Log.info("Cancelled", "Barcode result")
   end
-  Rho.Barcode.stop();
+  Rho::Barcode.stop();
 end
 
 end
